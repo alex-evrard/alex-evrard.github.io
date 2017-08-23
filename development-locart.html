@@ -13,31 +13,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
 </head>
 <body>
     <div id="header">
         <ul>
-            <li> <a href="index.html"> <button> <span class="glyphicon glyphicon-home"></span> Back to index </button> </a> </li>
+            <li> <a href="index.html"> <button> <span class="glyphicon glyphicon-home"></span> Homepage </button> </a> </li>
         </ul>
     </div>
 
-    <header id="top-white" class="callout2">
+    <header id="top-white" class="header header-development">
         <div class="text-vertical-center">
             <h1> Development <br/> of <br/> Locart </h1>
         </div>
     </header>
 
-    <section id="summary2" class="portfolio">
+    <section id="summary" class="inter-section-spacing bg-info">
+        <h2 class="text-center"> Summary </h2>
+    </section>
+
+    <section class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2> <b> Summary </b> </h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
                             <p class="lead"> <b> Idea presentation </b> </p>
                             <div class="portfolio-item">
-                                <a href="#web-intro1">
+                                <a href="#web-intro">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-5.jpg" alt="image representing people around a lightbulb">
                                 </a>
                             </div>
@@ -45,7 +49,7 @@
                         <div class="col-md-5">
                             <p class="lead"> <b> Front-end development </b> </p>
                             <div class="portfolio-item">
-                                <a href="#heuristic-eval1">
+                                <a href="#front-end">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-6.jpg" alt="image representing html5 & css3 together">
                                 </a>
                             </div>
@@ -53,7 +57,7 @@
                         <div class="col-md-6">
                             <p class="lead"> <b> Back-end development </b> </p>
                             <div class="portfolio-item">
-                                <a href="#CC-analysis1">
+                                <a href="#back-end">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-7.jpg" alt="image of a puzzle with a php piece being put in">
                                 </a>
                             </div>
@@ -61,7 +65,7 @@
                         <div class="col-md-5">
                             <p class="lead"> <b> Business plan </b> </p>
                             <div class="portfolio-item">
-                                <a href="#task-analysis1">
+                                <a href="#business-plan">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-8.jpg" alt="image representing cash droping">
                                 </a>
                             </div>
@@ -72,44 +76,61 @@
         </div>
     </section>
 
-    <aside class="call-to-action" id="idea-presentation1">
+    <section id="web-intro" class="inter-section-spacing bg-info">
+        <h2 class="text-center"> Idea presentation </h2>
+    </section>
+
+    <section class="portfolio" id="idea-pres">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-12 text-center">
-                    <h2> Idea presentation </h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3"> </div>
-                    <div class="col-md-6">
-                        <p class="lead"> 
-                            LocArt is a website that allows customers to get in touch with a large choice of artists.
-                            The main goal is to offer the artists some visibility that they don't have yet while allowing users to 
-                            easily find artists.
-                            <br/>
-                            One of the reason is the fact that some "young" artists may struggle at their beginning. 
-                            The website is offering the possibility for them to get known. 
-                            <br/>
-                            The other reason is to allow people who want to organize a party to find many different type of artists 
-                            and to find artists that may be more in their price range.
-                        </p>
-                    </div> 
-                    <div class="col-lg-3"> </div>
-                </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <p class="lead"> 
+                        LocArt is a website that allows customers to get in touch with a large choice of artists.
+                        The main goal is to offer the artists some visibility that they don't have yet while allowing users to 
+                        easily find artists.
+                    </p>
+                    <p class="lead">
+                        One of the reason is the fact that some "young" artists may struggle at their beginning. 
+                        The website is offering the possibility for them to get known. 
+                    </p>
+                    <p class="lead">
+                        The other reason is to allow people who want to organize a party to find many different type of artists 
+                        and to find artists that may be more in their price range.
+                    </p>
+                </div> 
             </div>
         </div>
-    </aside>
+    </section>
 
-    <!-- Map -->
+    <section id="front-end" class="inter-section-spacing bg-info">
+        <h2 class="text-center"> Front-end </h2>
+    </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <p class="text-muted">Copyright &copy; Alexandre Evrard 2017</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top-white" class="btn btn-dark btn-lg"><i class="glyphicon glyphicon-arrow-up"></i></a>
+    <section class="portfolio">
+
+    </section>
+
+
+    <section id="back-end" class="inter-section-spacing bg-info">
+        <h2 class="text-center"> Back-end </h2>
+    </section>
+
+    <section class="portfolio">
+
+    </section>
+
+    <section id="business-plan" class="inter-section-spacing bg-info">
+        <h2 class="text-center"> Business plan </h2>
+    </section>
+
+    <section class="portfolio">
+
+    </section>
+
+    <footer class="text-center">
+        <hr id="footer-lign">
+        <p class="lead">Copyright &copy; Alexandre Evrard 2017</p>
+        <a id="to-top" href="#top" class="btn btn-info btn-lg"><i class="glyphicon glyphicon-arrow-up"></i></a>
     </footer>
 
     <script src="js/jquery.js"></script>
