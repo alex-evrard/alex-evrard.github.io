@@ -348,6 +348,7 @@ section.portfolio {
 
 #myphoto {
     width: 300px;
+    height: 210px;
     position:absolute;
     left:3px;
     top:-225px;
