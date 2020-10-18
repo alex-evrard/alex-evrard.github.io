@@ -620,3 +620,6 @@ body #about table tr td {
     top: 720px;
 }
 
+tr td {
+    height:50px;
+}
