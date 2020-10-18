@@ -84,6 +84,9 @@ body {
     font-family: roboto;
 }
 
+tr td {
+    height:55px;
+}
 
 .text-vertical-center {
     display: table-cell;
@@ -231,14 +234,6 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* About */
-
-/* .about {
-    padding: 50px 0; margin:30px 0;
-} */
-
-/* Services */
-
 .services {
     padding: 50px 0;
 }
@@ -260,8 +255,6 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
-
-
 
 .callout2 {
     display: table;
@@ -307,8 +300,6 @@ div .img-portfolio {
 .map {
     height: 500px;
 }
-
-
 
 .map iframe {
     pointer-events: none;
@@ -446,7 +437,6 @@ body #about table tr td {
 .first-div-contact {
     display:flex;
     flex-direction: column;
-
 }
 
 .first-div-contact h4 {
@@ -575,7 +565,6 @@ body #about table tr td {
     color:white;
 }
 
-
 .locart-img {
     width:550px;
     height:400px;
@@ -618,8 +607,4 @@ body #about table tr td {
     position: absolute;
     left: -330px;
     top: 720px;
-}
-
-tr td {
-    height:55px;
 }
