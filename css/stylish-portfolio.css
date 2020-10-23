@@ -511,10 +511,10 @@ body #about table tr td {
 }
 
 #footer-lign {
-    width:40%;
+    width:60%;
     background-color:#5bc0de;
     height:2px;
-    border:1 solid #5bc0de;
+    border:1px solid #5bc0de;
     margin-top:50px;
 }
 
