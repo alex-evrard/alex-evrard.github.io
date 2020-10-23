@@ -22,6 +22,7 @@
         margin:0;
     }
 
+
     #myphoto {
         width: 100%;
         height: 75%;
@@ -61,8 +62,9 @@
     }
 
     #myphoto {
-        width: 70%;
-        height: 75%;
+        width: 50%;
+        height: 65%;
+        margin-bottom:10px;
     }
 
     .exp {
@@ -82,10 +84,28 @@ body {
     width: 100%;
     height: 100%;
     font-family: roboto;
+    background-color: rgb(220,220,220);
 }
 
-tr td {
-    height:55px;
+header {
+    color:rgb(220,220,220);
+}
+
+h2 {
+    color: #5bc0de;
+}
+
+table:last-child {
+    margin-bottom:50px;
+}
+
+table:last-child tr{
+    height:60px;
+}
+
+table tr th {
+    font-size: 1.2em;
+    color: #5bc0de;
 }
 
 .text-vertical-center {
@@ -162,6 +182,27 @@ hr.small {
     list-style: none;
 }
 
+#cv {
+    position: fixed;
+    bottom:0;
+    z-index: 10;
+    width:125px;
+    height:55px;
+    background-color:rgb(220,220,220);
+    border-radius: 30px;
+    border:2px solid black;
+    color:black;
+    margin:0.5em;
+    font-weight: 700;
+}
+
+#cv:hover {
+    text-decoration: none;
+    color:white;
+    background-color: #5bc0de;
+}
+
+    
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
@@ -227,7 +268,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/code-img2.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -261,11 +302,12 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout2.jpg) no-repeat center center scroll;
+    background: url(../img/web-dev.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color:black;
 }
 /* Portfolio */
 
@@ -319,10 +361,6 @@ footer {
   width:70px;
 }
 
-#top {
-    color:black;
-}
-
 #menu-burger {
 	color:white;
 	font-weight:700;
@@ -360,14 +398,14 @@ footer {
 #header button {
     width:125px;
     height:55px;
-    background-color:white;
+    background-color:rgb(220,220,220);
     border-radius: 30px;
     border:2px solid black;
     color:black;
 }
 
 #header button:hover {
-    background-color:black;
+    background-color:#5bc0de;
     color:white;
 }
 
