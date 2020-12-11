@@ -438,6 +438,7 @@ section.portfolio {
 .container {
     margin-top:25px;
     margin-bottom:25px;
+    text-align: center;
 }
 
 body #about table tr td {
@@ -645,4 +646,33 @@ body #about table tr td {
     position: absolute;
     left: -330px;
     top: 720px;
+}
+
+#divcesi {
+    display:flex;
+    justify-content: space-around;
+    width:65%;
+    margin:auto;
+}
+
+#divcesi img {
+    width:42%;
+}
+
+#divcesi div {
+    width:55%;
+    text-align: center;
+    margin:20px;
+}
+
+.projets h2{
+    margin:20px;
+}
+
+.projets a {
+    color:#5bc0de;
+}
+
+.italic {
+    font-style: italic;
 }
