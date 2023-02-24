@@ -1,0 +1,1354 @@
+* {
+    margin:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+@font-face {
+    font-family: calligraffiti;
+    src: url(../font/Calligraffitti-Regular.ttf);
+}
+
+@font-face {
+    font-family: encode;
+    src: url(../font/EncodeSans-Regular.ttf);
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: #5B5644; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 2em; /* Increase font size */
+  transform: rotate(90deg);
+}
+
+#myBtn2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: #5B5644; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 2em; /* Increase font size */
+  transform: rotate(90deg);
+  background-color:#E2FCFB;
+}
+
+#toup {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+.container-pdg {
+    background: url('../img/pdg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo-pdg {
+    position:absolute;
+    bottom:15%;
+    left:25%;
+    text-decoration:none;
+    line-height:1;
+    font-weight:400;
+    letter-spacing:0px;
+    background:none;
+    color:#5b5644;
+    font-family:calligraffiti;
+    font-size:60px;
+}
+
+.h1-logo {
+  text-decoration:none;
+  line-height:1;
+  font-weight:400;
+  letter-spacing:0px;
+  background:none;
+  color:#5b5644;
+  font-family:calligraffiti;
+  font-size:60px;
+  margin-top:3%;
+}
+
+/* 
+@charset "UTF-8"; */
+.carousel {
+  display: block;
+  font-size: 0;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: white;
+  transform: translateZ(0);
+  /* height: 200px; */
+  -webkit-overflow-scrolling: touch;
+  /* for tablets */
+}
+.touch .carousel {
+  overflow: auto;
+}
+.carousel[data-at*=left] > .wrap::before {
+  opacity: 1;
+  text-indent: -50px;
+}
+.carousel[data-at*=right] > .wrap::after {
+  opacity: 1;
+  text-indent: -50px;
+}
+.carousel::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 4;
+  bottom: -4px;
+  left: 0;
+  background: #5B5644;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  width: var(--scrollWidth, 0);
+  left: var(--scrollLleft, 0);
+  transition: opacity 0.2s, bottom 0.2s;
+}
+.carousel:hover::after {
+  opacity: 1;
+  bottom: -10px;
+}
+.carousel > .wrap {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.carousel > .wrap::before, .carousel > .wrap::after {
+  content: "‹";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 50px;
+  font-size: 80px;
+  text-indent: -30px;
+  line-height: 390px;
+  font-family: monospace;
+  color: #555;
+  font-weight: bold;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: 0.2s ease-out;
+  background: linear-gradient(to right, white 20%, transparent);
+}
+.carousel > .wrap::after {
+  transform: rotate(180deg);
+  left: auto;
+  right: 0;
+}
+.carousel > .wrap > ul {
+  list-style: none;
+  white-space: nowrap;
+  height: 385px;
+}
+.carousel > .wrap > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0 0 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease-out;
+}
+.carousel > .wrap > ul > li:first-child {
+  margin: 0;
+}
+.carousel > .wrap > ul > li > img {
+  display: block;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+body {
+  background-color: #f1f1f2;
+  color:#5B5644;
+  font-family: encode;
+}
+
+.carousel {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 90%;
+  min-width: 550px;
+  margin: auto;
+}
+
+
+h1 {
+    font-size: 3.5em;
+}
+
+.menu, .menu2 {
+    text-align: center;
+    margin:25px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding:0;
+}
+
+.menu2 ul {
+  list-style-type: none;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:70%;
+  margin:auto;
+}
+
+.menu ul li, .menu2 ul li {
+    display: inline-block;
+    margin:25px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.menu a, .menu2 a {
+    text-decoration: none;
+    color:#5B5644;
+}
+
+.reset {
+    height:420px;
+}
+
+#accueil-citation {
+  text-align: center;
+  margin:5% auto;
+  font-style: italic;
+  font-family: calligraffiti;
+  font-size: 1.5em;
+}
+
+.signature {
+  width:90%;
+  margin:auto;
+  font-size:0.8em;
+  font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin:55px;
+    margin-top:15%;
+}
+
+footer img {
+    width:35px;
+    border-radius: 25%;
+    margin:20px;
+}
+
+.footerBack a {
+  text-decoration: none;
+  font-size: 2em;
+  color:#5B5644;
+}
+
+.about-img {
+    width:200px;
+}
+
+/* #stflorent {
+  margin-top: 50px;
+  margin-left: 10%;
+} */
+
+.main-about {
+    width:85%;
+    margin:auto;
+}
+
+.text-important {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size:1.2em;
+}
+
+.main-about > div:first-child {
+    display: flex;
+    margin:50px auto;
+    align-items: center;
+    width:75%;
+    justify-content: space-around;
+}
+
+.main-about > div:first-child p {
+    text-align: center;
+    margin:auto;
+    width:40%;
+}
+
+.div-about {
+    display:flex;
+    justify-content: space-evenly;
+    margin:auto;
+    margin-left:3%;
+}
+
+.div-about p {
+  line-height: 1.4;
+  margin:35px;
+  text-align: justify;
+}
+
+.div-about > div {
+    margin:25px;
+    width:50%;
+}
+
+.h2-about {
+    margin:30px 5% 25px 14%;
+}
+
+.div-about div p a {
+  text-decoration: none;
+}
+
+#photo-stflorent {
+  text-align: center;
+}
+
+.signature-photo {
+  font-weight: normal;
+}
+
+.about-rs {
+    text-align: center;
+    font-size:1.1em;
+    margin-top:5%;
+}
+
+.about-rs a {
+    text-decoration: none;
+    color:#5B5644;
+    font-weight: bold;
+}
+
+.citation {
+  text-align: center;
+  margin-top:8px;
+}
+
+.bg-color2 {
+  background-color:#E2FCFB;
+}
+
+/********** TIRAGES **********/
+
+
+.div-tirages {
+  display:flex;
+  margin:4% auto;
+  width:60%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.div-tirages > h2 {
+  margin:5%;
+}
+
+.div-tirages > p {
+  width: 70%;
+  margin:auto;
+}
+
+.div-tirages > p a {
+  text-decoration: none;
+}
+
+#tirage-text {
+  font-size:1.2em;
+}
+
+#frais {
+margin-top: -4%;
+margin-bottom: 5%;
+font-style:italic;
+}
+
+.tirages-formats {
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+#form-tirage {
+  width:40%;
+  margin:auto;
+  margin-top:35px;
+  display:flex;
+  flex-direction: column;
+}
+
+#form-tirage div {
+  display:flex;
+  flex-direction: column;
+  width:55%;
+  text-align: center;
+  margin: auto;
+}
+
+#form-tirage div textarea {
+  height:150px;
+}
+
+.form-icon {
+  width:85%;
+  display:flex;
+  margin:auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-contact img{
+  width:250px;
+}
+
+#icon-contact, #icon-livre {
+  cursor: pointer;
+}
+
+.form-icon div {
+  text-align: center;
+}
+
+.content-livre {
+  display:flex;
+  margin:auto;
+  margin-top:50px;
+  flex-direction: column;
+  width:70%;
+}
+
+.content-livre div {
+  margin: 10px;
+}
+
+.form-content {
+  width:85%;
+  display:flex;
+  justify-content: space-around;
+  margin:auto;
+  margin-top:30px;
+}
+
+#contact-content form {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  margin:auto;
+}
+
+.form-contact-input {
+  width:100%;
+  margin:15px 0;
+}
+
+.form-contact-inputarea {
+  width:100%;
+  margin:15px 0;
+  height: 100px;
+}
+
+
+.form-contact-submit {
+  text-align: center;
+}
+
+.livre_date {
+  word-spacing: 15px;
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.livre-content-2 p{
+  margin:10px;
+}
+
+.pagination {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.pagination li {
+  display:inline-block;
+  margin:5px;
+}
+
+.input-form {
+  margin:15px;
+}
+
+.input-form-2 {
+  margin:15px;
+  height:100px;
+}
+
+.input-form-invis {
+  display:none;
+}
+
+.input-submit {
+  margin:25px auto;
+  width:25%;
+  border-radius:10px;
+  height: 30px;
+  text-align:center;
+}
+
+.input-submit:hover {
+  cursor: pointer;
+  background-color: #5B5644;
+  color: #f1f1f2; 
+}
+
+.statusMsg {
+  margin:10px;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+#contact-content, #livre-content {
+  width:40%;
+  display:none;
+  text-align: center;
+}
+
+#containerlogin {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+#formlogin input{
+  margin:10px;
+}
+
+/************ BACKOFFICE ************/
+/************ BACKOFFICE ************/
+
+
+.container-backoffice > h1, .container-backoffice > h2, .container-backoffice > h3, .container-backoffice > h4, .container-backoffice > div > h2, .container-backoffice > div > h3, .container-backoffice > div > h4 {
+  margin:55px;
+  text-align: center;
+}
+
+.container-backoffice form {
+  text-align: center;
+}
+
+.container-backoffice div table {
+  margin:auto;
+}
+
+#form-slider input, #form-admin input {
+  margin:25px;
+}
+
+.liste-slider {
+  width:150px;
+}
+
+.table-admin {
+  margin:auto;
+  padding:15px;
+}
+
+.button-admin {
+  width:20px;
+  margin:10px;
+}
+
+.update, .delete {
+  margin:5px;
+}
+
+.liste-img {
+  margin:auto;
+  margin-top:50px;
+  display:flex;
+  justify-content: space-around;
+  width:85%;
+  flex-wrap: wrap;
+}
+
+.liste-img div {
+  width:30%;
+}
+
+.div-image-slider {
+  text-align: center;
+  display: flex;
+  margin:25px 0;
+  flex-direction: column;
+}
+
+.div-info-slider {
+  overflow: auto;
+  margin:10px auto;
+}
+
+.span-info-slider {
+  font-weight:bold;
+}
+
+.div-image-slider img {
+  margin:5px auto;
+}
+
+.div-image-slider ul{
+  padding:0;
+}
+
+.iconseditdelete {
+  margin:10px;
+}
+
+.liststylenone {
+  list-style-type: none;
+}
+
+.selectPrix {
+  margin:auto;
+  text-align: center;
+}
+
+#form-prix {
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  width:50%;
+}
+
+#form-prix form {
+  display: flex;
+  flex-direction: column;
+  width:25%;
+  margin:auto;
+}
+
+.selectPrix form {
+  display:flex;
+  flex-direction: column;
+  width:fit-content;
+  margin:auto;
+}
+
+.selectPrix input {
+  margin:10px 0;
+}
+
+.formatPrix {
+  display:flex;
+  flex-direction: column;
+  margin:35px;
+}
+
+.formatPrix > div {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.formatPrixFront {
+  display:flex;
+  flex-direction: column;
+  margin:15px;
+}
+
+.formatPrixFront > div {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+.table-choix-gallery {
+  margin:auto;
+  text-align: center;
+  width:75%;
+}
+
+.table-choix-gallery td{
+  border: 1px solid black;
+  font-size: 1.2em;
+  height:2em;
+}
+
+.footerBack {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+#logoutButton, #affichePass, #modifPass {
+  background-color: #f1f1f2;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #5B5644;
+    border-radius: 20px;
+}
+
+#logoutButton:hover, #affichePass:hover, #modifPass:hover {
+  cursor: pointer;
+  background-color: #5B5644;
+  color: #f1f1f2;
+}
+
+.back-livreOr {
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+[class="back-livreOr"]:last-of-type {
+  border:none;
+}
+
+.content-livre-back {
+    display:flex;
+    margin:auto;
+    margin-top:50px;
+    flex-direction: column;
+    width:80%;
+}
+
+.livre-content-back {
+  margin:10px;
+  width:90%;
+}
+
+.delete-livreOr {
+  align-self: center;
+}
+
+.livre-auteur-back {
+  margin: 10px 0;
+}
+
+.livre-rep {
+  width:95%;
+  text-align: justify;
+  padding:20px;
+  font-weight: lighter;
+  font-size: 0.85em;
+}
+
+.livre-rep-HE {
+  padding-left:20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+
+#container-galleryBack {
+  text-align: center;
+}
+
+#container-galleryBack h3 {
+  margin:20px;
+}
+
+#div-gallery-carre,#div-gallery-devoile,#div-gallery-nb,#div-gallery-nb2,#div-gallery-couleur,#div-gallery-couleur2 {
+  display:none;
+}
+
+#ul-gallery-back {
+  font-size: 1.1em;
+  width: 80%;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+#ul-gallery-back li{
+  cursor: pointer;
+  margin:auto;
+}
+
+.form-gallery {
+  margin: 25px;
+}
+
+.form-gallery input{
+  margin:25px;
+}
+
+.form-modif {
+  margin:auto;
+  width:50%;
+}
+
+.div-devoilePass {
+  text-align: center;
+  margin:25px;
+}
+
+
+
+/************************* GALERIE **************************/
+/************************* GALERIE **************************/
+/************************* GALERIE **************************/
+
+.main-galerie {
+  height: calc( 100vh - 56.06px);
+  background-size: cover;
+}
+
+.galerie-content {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.galerie-content-left {
+  display:flex;
+  height: 100%;
+  justify-content: space-between;
+  width:95%;
+  margin:auto;
+}
+
+.galerie-content-right {
+  display:flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width:95%;
+  margin:auto;
+}
+
+.icon-galerie-container{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  text-align: center;
+  margin:auto;
+}
+.selectGalerie{
+  display: none;
+}
+
+.galerie{
+  padding: 5px;
+}
+
+.right-block-galerie,.left-block-galerie,.bottom-block-galerie, .galerie-info{
+  text-align: center;
+  margin:auto;
+}
+.right-block-galerie,.left-block-galerie,.bottom-block-galerie{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.bottom-block-galerie {
+  margin-top:4%;
+}
+.right-block-galerie {
+  margin-left:6%;
+}
+.left-block-galerie {
+  width:25%;
+}
+.h2-galerie{
+  width: fit-content;
+  color: black;
+  font-weight: 100;
+  font-style: italic;
+  padding: 5px 16px;
+  margin:auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+.p-galerie{
+  align-self: flex-end;
+  color: white;
+  width: 50%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.container-galerie-info{
+  width: 50%;
+  align-self: flex-end;
+}
+
+.galerie-container{
+  width: 60vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-galerie{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.img-galerie{
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  background-color: red;
+  border: black 1px solid;
+  object-fit: cover;
+}
+
+.globale-padding{
+  padding: 15px 30px;
+}
+
+.list-galerie{
+  height: 100px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.list-galerie2{
+  height: 120px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.list-galerie:hover {
+  cursor: pointer;
+}
+
+#setGalerieImg {
+max-height:800px;
+}
+
+.galerie-content-carre {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-galerie-carre:active {
+   transform: scale(1.2);
+   transition: 1s;
+}
+
+.zoomD {
+  width: 400px;
+  margin-bottom:1%;
+  height: auto;
+  cursor: pointer;
+}
+
+#lb-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+#lb-back.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#lb-img {
+  height: 102%;
+  background: black;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding-top: 1%;
+}
+#lb-img img {
+  width: 45%;
+  height: auto;
+}
+
+.title-carre {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.3em;
+position:relative;
+bottom:0;
+}
+
+
+
+
+
+
+
+@media screen and (max-device-width: 500px) {
+
+  .liste-img div{
+    width:40%;
+  }
+
+  .liste-slider {
+    width:150px;
+    margin:15px;
+  }
+
+}
+
+/************* PORTFOLIO *************/
+/************* PORTFOLIO *************/
+
+.container-portfolio {
+  text-align: center;
+  margin-top:2%;
+}
+
+.container-portfolio div {
+  margin:15px 0;
+}
+
+.img-portfolio {
+  width:340px;
+  margin:15px;
+  border: 1.5px solid black;
+  padding: 1.5px;
+}
+
+#gallery-top {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom:20px;
+  position: relative;
+}
+
+#gallery-mid {
+  display:flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#gallery-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  width: 87%;
+  margin: auto;
+  position: relative;
+}
+
+.gallery-div {
+  height:fit-content;
+  display:flex;
+  justify-content: center;
+}
+
+#first-gallery {
+  width:fit-content;
+  margin:auto;
+}
+
+.gallery-div a {
+  text-decoration: none;
+}
+
+.gallery-title {
+  position: absolute;
+  z-index: 1000;
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+  font-size: 1.5em;
+  height: 200px;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  width: 340px;
+  margin:0 15px;
+}
+
+
+
+
+.gallery-div:hover .gallery-title {
+  visibility: visible;
+} 
+
+
+.body-portfolio-v2 {
+  background-color: white;
+}
+
+
+.container-portfolio-v2 {
+  text-align: center;
+  height:800px;
+  position: relative;
+  background-color:white;
+}
+
+.container-portfolio-v2 div {
+  margin:auto;
+}
+
+.img-portfolio-v2 {
+  width: 250px;
+  height: 250px;
+  margin: 20%;
+  border-radius: 100%;
+  margin-left: 35%;
+  margin-top: 25%;
+}
+
+
+.div-gallery-v2 {
+  background: url('../img/icon-photo.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:500px;
+}
+
+#gallery-top-v2 {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  position: relative;
+}
+
+#gallery-mid-v2 {
+  display:flex;
+  position: relative;
+}
+
+#gallery-bottom-v2 {
+  display:flex;
+  position: relative;
+}
+
+
+/********** Gallery 1 **********/
+
+.body-gallery1 main {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:5%;
+}
+
+.div-gallery1 {
+  display:flex;
+  text-align: center;
+  margin-top:4%;
+}
+
+/* Styles the thumbnail */
+
+a.lightbox img {
+  width: 75%;
+  margin: 15px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+ 
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+  display: block;
+  width:50px;
+  height:50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0;
+}
+
+
+/********** Gallery 2 **********/
+
+.main-gallery2 {
+  display:flex;
+  justify-content: space-between;
+  width:85%;
+  margin:auto;
+  margin-top:50px;
+}
+
+.h1-gallery2 {
+  text-align: center;
+  margin:50px;
+}
+
+.div-mini {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:auto;
+  width:40%;
+}
+
+.div-big {
+  width: 60%;
+  margin:auto;
+}
+
+.photo-mini {
+  width:15%;
+  margin:20px;
+}
+
+.photo-big {
+  width:100%;
+}
+
+.hiddenText {
+display:none;
+}
