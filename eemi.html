@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Alexandre Evrard - Le siteweb - EEMI </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header2" id="top">
+        <div>
+            <h1>Le développement <br/> de <br/> LocArt</h1>
+        </div> 
+    </header>
+
+    <section id="summary" class="separate">
+        <h2> Résumé </h2>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="container2">
+                <div class="containerDiv">
+                    <a href="#intro"> Introduction
+                        <img src="img/presEemi.jpg" class="imgSummary">
+                    </a>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="containerDiv">
+                    <a href="#frontDev"> Développement du front
+                        <img src="img/htmlCss.jpg" class="imgSummary">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container2">
+                <div class="containerDiv">
+                    <a href="#backDev"> Développement du back
+                        <img src="img/php.jpg" class="imgSummary">
+                    </a>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="containerDiv">
+                    <a href="#conclusion"> Conclusion
+                        <img src="img/conclusionEemi.webp" class="imgSummary">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="separate">
+        <h2> Introduction </h2>
+    </section>
+
+    <section class="containerColumn">
+        <h3>Partenaires du projet</h3>
+        <div class="container">
+            <div class="containerDiv">
+                <img src="img/sarah.jpg" class="partProjet">
+                <p class="partRole">Développeur web</p>
+            </div>
+            <div class="containerDiv">
+                <img src="img/julien.jpg" class="partProjet">
+                <p class="partRole">Marketeur web</p>
+            </div>
+            <div class="containerDiv">
+                <img src="img/francois.jpg" class="partProjet">
+                <p class="partRole">Marketeur web</p>
+            </div>
+            <div class="containerDiv">
+                <img src="img/enzo.jpg" class="partProjet">
+                <p class="partRole">Développeur web</p>
+            </div>
+        </div>
+        <div class="containerDiv">
+            <h3>L'idée du projet</h3>
+            <p id="projetIdea">
+                LocArt est un site qui permet aux utilisateurs de trouver tout types artistes.
+                De plus il permet aux artistes d'avoir une platforme et donc plus de visibilité.
+                Le but principal est donc demettre en lien des acheteurs et des artistes.
+                <br/>
+                <br/>
+                Cela permet aux nouveaux artistes, encore trop peu connu, de présenter leur talent et leur
+                permettre de développer leur art et de devenir mieux connu.
+                <br/>
+                <br/>
+                Cela permet également aux organisateurs d'évènement de trouver facilement différents types 
+                d'artistes et de pouvoir choisir facilement selon le prix et le lieu. 
+            </p>
+        </div>
+    </section>
+
+    <section id="frontDev" class="separate">
+        <h2> Développement du front </h2>
+    </section>
+    
+    <section class="containerColumn">
+        <p>
+            Pour le développement du front-end du site LocArt <br/>
+            nous avons utilisés du HTML 5 & du CSS 3. <br/>
+            Le code est entièrement fait à la main (From scratch)
+        </p>
+        <h4>Page principale</h4>
+        <div>
+            <img src="img/locart-home1.jpg" class="imgFront">
+            <img src="img/locart-home2.jpg" class="imgFront">
+        </div>
+        <h4>Page artiste</h4>
+        <div>
+            <img src="img/locart-artist1.jpg" class="imgFront">
+            <img src="img/locart-artist2.jpg" class="imgFront">
+        </div>
+        <h4>Page de connexion</h4>
+        <div>
+            <img src="img/locart-login1.jpg" class="imgFront">
+            <img src="img/locart-login2.jpg" class="imgFront">
+        </div>
+    </section>
+
+    <section id="backDev" class="separate">
+        <h2> Développement du back </h2>
+    </section>
+
+    <section class="containerColumn">
+        <p>
+            Le développement du back-end du site est fait en Php. <br/>
+            Le backoffice est codé en Html & Css avec Bootstrap. <br/>
+            Tout est classé avec le format MVC.
+        </p>
+        <h4> Back Office</h4>
+        <img src="img/locart-back1.jpg" class="imgBack">
+        <p class="cf">J'ai caché les noms, mails & numéros de téléphone pour respecté la vie privée de mes partenaires</p>
+        <img src="img/locart-back2.jpg" class="imgBack">
+    </section>
+
+    <section id="conclusion" class="separate">
+        <h2> Conclusion </h2>
+    </section>
+
+    <section class="containerColumn">
+        <h3>Le backoffice</h3>
+        <div class="eemiConclusion">
+            <img src="img/back.png" class="imgConclusion">
+            <p>
+                Le back office du site permets de gérer 2 tables : artistes et clients ainsi que les notes & commentaires
+                <br/>
+                <br/>
+                Deux actions sont possibles : supprimer ou modifier.
+                <br/>
+                <br/>
+                Une fonction Javascript ajoute une protection sur les tables avec une pop-up afin d'éviter des éventuels miss-clicks. 
+            </p>
+        </div>
+        <h3>Le Front</h3>
+        <div class="eemiConclusion">
+            <img src="img/front.jpg" class="imgConclusion">
+            <p>
+                La bar de recherche permet au utilisateurs de trouver des artistes avec 2 options de recherches: Géographique ou type d'artiste
+                <br/>
+                <br/>
+                Locart organise également des évènements avec des nouveaux artistes et des vedettes.
+                <br/>
+                <br/>
+                Un système de note/commentaire est présent pour permettre aux utilisateurs d'exprimer leurs opinions sur les artistes 
+                qu'ils ont engagé. Ceux-ci sont surveillés et monitorés par des admins pour éviter les abus. 
+            </p>
+        </div>
+        <h3>Axe d'amélioration</h3>
+        <div class="eemiConclusion">
+            <img src="img/improvement.jpg" class="imgConclusion">
+            <p>
+                Le logo actuel doit être changé pour qu'il reflète mieux l'idée festive, de partage et de talents du projet.
+                <br/>
+                <br/>
+                L'ajout d'une page pour le backoffice qui rassemblerait différentes statistiques pour l'artiste.
+                <br/>
+                <br/>
+                L'ajout de vidéo de présentation pour les artistes afin qu'ils puissent mieux se présenter aux utilisateurs. 
+            </p>
+        </div>
+    </section>
+    <footer>
+        <span id="versCv">Pour télécharger mon CV cliquez ici </span><img src="img/fleche.png" id="imgFleche">
+            <a href="https://github.com/alex-evrard/alex-evrard.github.io/raw/master/Evrard-Alexandre-CV.pdf" download="https://github.com/alex-evrard/alex-evrard.github.io/raw/master/Evrard-Alexandre-CV.pdf"><img id="imgCV" src="img/icone-cv.png"></a>
+            <a href="mailto:alexandre.evrard.pons@gmail.com"><img class="img-icone" src="img/icone-mail.png"></a>
+            <a href="https://www.linkedin.com/in/alexandre-evrard/" target="_blank"><img class="img-icone" src="img/icon-linkedin.png"></a>
+            <a href="index.html"><button id="retourMain">Accueil</button></a>
+    </footer>
+
+    <a href="#top" id="scrollButton" onclick="topFunction()"><img src="img/fleche-vers-le-haut.png"></a>
+
+</body>
+</html>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+
+    let mybutton = document.getElementById("scrollButton");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    };
+    function topFunction() {
+    document.documentElement.scrollTop = 0;
+    };
+</script>
