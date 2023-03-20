@@ -3,6 +3,7 @@ var work = document.getElementById("work");
 var school = document.getElementById("school");
 var idAbout = document.getElementById("contentAbout");
 var idWork = document.getElementById("contentWork");
+var idSchool = document.getElementById("contentSchool");
 var idAboutMobile = document.getElementById("contentAboutMobile");
 var idWorkMobile = document.getElementById("contentWorkMobile");
 var idSchoolMobile = document.getElementById("contentSchoolMobile");
